@@ -63,13 +63,13 @@ nav a:hover{
 /* HERO */
 .hero{
   width:100%;
-  height:auto; /* altezza proporzionale */
+  height:auto;
   position: relative;
 }
 
 .hero video{
-  width:100%; /* tutta la larghezza */
-  height:auto; /* mantiene proporzioni */
+  width:100%;
+  height:auto;
 }
 
 /* SECTIONS */
@@ -100,11 +100,21 @@ h2{
   transition:0.3s;
   opacity:0;
   transform:translateY(30px);
+  overflow:hidden;
+  position:relative;
 }
 
 .card:hover{
   border-color:#ffd300;
   transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:180px; /* altezza uniforme */
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:15px;
 }
 
 .card h3{
@@ -149,6 +159,7 @@ h2{
   padding:15px 25px;
   background:#222;
   border:1px solid #333;
+  border-radius:6px;
 }
 
 .district:hover{
@@ -184,13 +195,16 @@ footer{
 <!-- NAVBAR -->
 <nav>
     <div class="logo">
-    <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/logo.jpg?raw=true" alt="Cyberpunk Logo" style="height: 45px; width: 250px; border-bottom: 0px; border-top: 0px;">
+    <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/logo.jpg?raw=true" alt="Cyberpunk Logo" style="height: 45px; width: 250px;">
   </div>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#storia">Storia</a></li>
     <li><a href="#personaggi">Personaggi</a></li>
-    <li><a href="#mappa">Night City</a></li>
+    <li><a href="#quartieri">Night City</a></li>
+    <li><a href="#armi">Armi</a></li>
+    <li><a href="#cyberware">Cyberware</a></li>
+    <li><a href="#veicoli">Veicoli</a></li>
     <li><a href="#curiosita">Curiosità</a></li>
   </ul>
 </nav>
@@ -209,15 +223,13 @@ footer{
     <div>
       <h3>NIGHT CITY 2077</h3>
       <p>
-        In un futuro dominato dalle mega-corporazioni e dall'ossessione per il cyberware, seguiamo la storia di V, un mercenario in cerca di gloria a Night City..</p>
+        In un futuro dominato dalle mega-corporazioni e dall'ossessione per il cyberware, seguiamo la storia di V, un mercenario in cerca di gloria a Night City.</p>
     </div>
     <div>
-    
-      <p>Tutto inizia quando V e il suo migliore amico Jackie Welles, accettano un lavoro che consiste nel furto di un prototipo tecnologico segreto della potente Arasaka Corporation. Si tratta del Relic, un biochip progettato per ospitare la coscienza digitale di un individuo. Durante la fuga, il chip viene danneggiato e V è costretto a inserirlo nel proprio sistema neurale per preservarne i dati.</p>
+      <p>Tutto inizia quando V e il suo migliore amico Jackie Welles accettano un lavoro che consiste nel furto di un prototipo tecnologico segreto della potente Arasaka Corporation. Si tratta del Relic, un biochip progettato per ospitare la coscienza digitale di un individuo. Durante la fuga, il chip viene danneggiato e V è costretto a inserirlo nel proprio sistema neurale per preservarne i dati.</p>
     </div>
     <div>
-      <p>chip contiene l'engramma (una copia digitale della mente) di Johnny Silverhand, un rocker ribelle e terrorista morto cinquant'anni prima durante l'attacco nucleare alla Arasaka Tower.
-Da quel momento, la storia diventa una corsa contro il tempo. Johnny appare a V come un'allucinazione vivida e costante, inizialmente ostile e violenta, poi sempre più legata al destino del protagonista. V scopre che il processo è irreversibile: entro poche settimane, la mente di V svanirà e Johnny prenderà il controllo totale del corpo.
+      <p>Il chip contiene l'engramma di Johnny Silverhand, un rocker ribelle morto cinquant'anni prima. Da quel momento la storia diventa una corsa contro il tempo. Johnny appare a V come un'allucinazione vivida e costante. V scopre che il processo è irreversibile: entro poche settimane, la mente di V svanirà e Johnny prenderà il controllo totale del corpo.</p>
     </div>
     <div>
       <p>Espansione Phantom Liberty.</p>
@@ -229,38 +241,101 @@ Da quel momento, la storia diventa una corsa contro il tempo. Johnny appare a V 
 <section id="personaggi">
   <h2>Personaggi principali</h2>
   <div class="character">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Cyberpunk_2077_box_art.jpg">
+    <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/v.jpg?raw=true">
     <div>
       <h3>V</h3>
       <p>Mercenario protagonista della storia.</p>
     </div>
   </div>
   <div class="character">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Cyberpunk_2077_box_art.jpg">
+    <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/johnny.jpg?raw=true">
     <div>
       <h3>Johnny Silverhand</h3>
       <p>Rocker ribelle interpretato da Keanu Reeves.</p>
     </div>
   </div>
-  <div class="character">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Cyberpunk_2077_box_art.jpg">
-    <div>
-      <h3>Judy Alvarez</h3>
-      <p>Tecnica specializzata nei braindance.</p>
+</section>
+
+<!-- QUARTIERI -->
+<section id="quartieri">
+  <h2>Quartieri di Night City</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/Watson.jpg?raw=true">
+      <h3>Watson</h3>
+      <p>Watson è uno dei quartieri più popolosi e industriali di Night City...</p>
     </div>
+
+    <div class="card">
+      <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/Westbrook.jpg?raw=true">
+      <h3>Westbrook</h3>
+      <p>Westbrook rappresenta la parte più ricca e lussuosa della città...</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/City_center.jpg?raw=true">
+      <h3>City Center</h3>
+      <p>Il cuore economico e finanziario di Night City...</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/Heywood.jpg?raw=true">
+      <h3>Heywood</h3>
+      <p>Heywood è un quartiere residenziale densamente popolato...</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/pacifica.jpg?raw=true">
+      <h3>Pacifica</h3>
+      <p>Pacifica è una zona quasi completamente abbandonata...</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/Badlands.jpg?raw=true">
+      <h3>Badlands</h3>
+      <p>Le Badlands sono l'enorme territorio desertico che circonda Night City...</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/nickfinesso/cyberpunk-TPSIT/blob/main/Santo_Domingo.jpg?raw=true">
+      <h3>Santo Domingo</h3>
+      <p>Uno dei quartieri industriali più importanti della città...</p>
+    </div>
+
   </div>
 </section>
 
-<!-- MAPPA -->
-<section id="mappa">
-  <h2>Night City</h2>
-  <div class="map">
-    <div class="district">Watson</div>
-    <div class="district">Westbrook</div>
-    <div class="district">City Center</div>
-    <div class="district">Heywood</div>
-    <div class="district">Pacifica</div>
-    <div class="district">Santo Domingo</div>
+<!-- ARMI -->
+<section id="armi">
+  <h2>Tipologie di Armi</h2>
+  <div class="grid">
+    <div class="card"><h3>Pistole</h3><p>Armi leggere, veloci e perfette per combattimenti ravvicinati.</p></div>
+    <div class="card"><h3>Fucili d'assalto</h3><p>Offrono potenza e precisione a media distanza.</p></div>
+    <div class="card"><h3>Shotgun</h3><p>Devastanti a corta distanza.</p></div>
+    <div class="card"><h3>Fucili di precisione</h3><p>Per eliminazioni a lunga distanza.</p></div>
+  </div>
+</section>
+
+<!-- CYBERWARE -->
+<section id="cyberware">
+  <h2>Cyberware</h2>
+  <div class="grid">
+    <div class="card"><h3>Impianti oculari</h3><p>Migliorano vista, zoom e analisi ambientale.</p></div>
+    <div class="card"><h3>Braccia potenziate</h3><p>Aumentano forza, velocità e combattimento.</p></div>
+    <div class="card"><h3>Impianti neurali</h3><p>Permettono hacking e controllo dispositivi.</p></div>
+    <div class="card"><h3>Potenziamenti fisici</h3><p>Migliorano resistenza, velocità e riflessi.</p></div>
+  </div>
+</section>
+
+<!-- VEICOLI -->
+<section id="veicoli">
+  <h2>Veicoli di Night City</h2>
+  <div class="grid">
+    <div class="card"><h3>Auto sportive</h3><p>Veicoli ad alte prestazioni per muoversi velocemente.</p></div>
+    <div class="card"><h3>Moto</h3><p>Perfette per il traffico e le strade strette.</p></div>
+    <div class="card"><h3>Veicoli industriali</h3><p>Per trasporto materiali e macchinari.</p></div>
+    <div class="card"><h3>Veicoli militari</h3><p>Usati da corporazioni per operazioni militari.</p></div>
   </div>
 </section>
 
@@ -268,30 +343,12 @@ Da quel momento, la storia diventa una corsa contro il tempo. Johnny appare a V 
 <section id="curiosita">
   <h2>Curiosità</h2>
   <div class="grid">
-    <div class="card">
-      <h3>Sviluppo</h3>
-      <p>Il gioco è stato sviluppato per oltre 8 anni.</p>
-    </div>
-    <div class="card">
-      <h3>Mappa</h3>
-      <p>Night City è una delle città più dettagliate nei videogiochi.</p>
-    </div>
-    <div class="card">
-      <h3>Cyberware</h3>
-      <p>I personaggi possono installare impianti tecnologici.</p>
-    </div>
-    <div class="card">
-      <h3>Musica</h3>
-      <p>La colonna sonora include molti artisti diversi.</p>
-    </div>
-    <div class="card">
-      <h3>Auto</h3>
-      <p>Il gioco include molte auto futuristiche guidabili.</p>
-    </div>
-    <div class="card">
-      <h3>Corporazioni</h3>
-      <p>Le megacorporazioni controllano la città.</p>
-    </div>
+    <div class="card"><h3>Sviluppo</h3><p>Il gioco è stato sviluppato per oltre 8 anni.</p></div>
+    <div class="card"><h3>Mappa</h3><p>Night City è una delle città più dettagliate nei videogiochi.</p></div>
+    <div class="card"><h3>Cyberware</h3><p>I personaggi possono installare impianti tecnologici.</p></div>
+    <div class="card"><h3>Musica</h3><p>La colonna sonora include molti artisti diversi.</p></div>
+    <div class="card"><h3>Auto</h3><p>Il gioco include molte auto futuristiche guidabili.</p></div>
+    <div class="card"><h3>Corporazioni</h3><p>Le megacorporazioni controllano la città.</p></div>
   </div>
 </section>
 
